@@ -1,42 +1,44 @@
 # 🌰 Orehi Urbas – Spletna stran
 
-Profesionalna spletna stran kmetije **Orehi Urbas** iz Dolenjske.
+Repozitorij vsebuje izvorno kodo spletne strani **Kmetije Urbas / Orehi Urbas** – ekološke kmetije iz Dolenjske, ki se ukvarja s pridelavo kakovostnih orehov.
 
-## 🚀 Deployment na GitHub Pages
+🌐 **Stran:** [Orehi Urbas](https://sabru-soru.github.io/oreh-website/)  
+📍 **Lokacija:** Šentvid pri Stični 174, 1296 Šentvid pri Stični, Slovenija  
+📞 **Telefon:** 031 733 211  
+📧 **E-pošta:** uros.urbas@gmail.com
 
-1. Ustvari nov repozitorij na GitHubu (npr. `oreh-urbas`)
-2. Naloži vse datoteke v repozitorij
-3. V nastavitvah repozitorija (Settings → Pages) nastavi:
-   - **Source**: Deploy from a branch
-   - **Branch**: `main` / `(root)`
-4. Stran bo dostopna na: `https://<tvoje-ime>.github.io/oreh-urbas/`
+## 📄 Strani
+
+| Datoteka | Vsebina |
+|---|---|
+| `index.html` | Domača stran |
+| `o-nas.html` | O kmetiji, naša zgodba, galerija |
+| `orehi.html` | Sorte orehov (Franquette, Fernor, Fernette, Lara, Elit) |
+| `pridelava.html` | Letni cikel pridelave, ekološki pristop |
+| `recepti.html` | Recepti z orehi |
+| `kontakt.html` | Kontaktni obrazec in lokacija |
+| `kviz.html` | Kviz – ugani sorto oreha |
 
 ## 📁 Struktura projekta
 
 ```
 oreh-website/
-├── index.html          ← Domov
-├── o-nas.html          ← O nas
-├── orehi.html          ← Sorte & Lastnosti
-├── pridelava.html      ← Pridelava
-├── recepti.html        ← Recepti
-├── kontakt.html        ← Kontakt
+├── index.html
+├── o-nas.html
+├── orehi.html
+├── pridelava.html
+├── recepti.html
+├── kontakt.html
+├── kviz.html
 ├── css/
 │   └── style.css
 ├── js/
 │   └── main.js
-├── images/             ← Tukaj dodaj prave slike
-├── .nojekyll           ← Potrebno za GitHub Pages
+├── images/
+│   ├── walnut-icon.svg     ← Logotip
+│   └── new_images/         ← Fotografije iz nasada
 └── README.md
 ```
-
-## 🖼️ Zamenjava slik
-
-Placeholder slike so naložene iz `picsum.photos`. Ko boste imeli lastne slike:
-
-1. Dodajte slike v mapo `images/`
-2. V vsaki HTML datoteki poiščite `https://picsum.photos/seed/...` 
-3. Zamenjajte z relativno potjo, npr. `images/nasad-jeseni.jpg`
 
 ## 🎨 Barvna shema
 
@@ -46,10 +48,3 @@ Placeholder slike so naložene iz `picsum.photos`. Ko boste imeli lastne slike:
 | `--bg-medium` | `#162416` | Sekundarno ozadje |
 | `--accent` | `#c9a84c` | Zlata – gumbi, naslovi |
 | `--text-primary` | `#f0e8d0` | Besedilo |
-
-## 📧 Kontaktni obrazec
-
-Obrazec trenutno simulira pošiljanje (toast sporočilo). Za pravo funkcionalnost povežite z:
-- [Formspree](https://formspree.io/) – brezplačno, enostavno
-- [EmailJS](https://www.emailjs.com/) – pošiljanje brez backend-a
-- Lasten PHP/Node.js backend
