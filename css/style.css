@@ -345,7 +345,7 @@ p:last-child { margin-bottom: 0; }
 .hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('https://picsum.photos/seed/walnut-orchard/1920/1080');
+    background-image: url('../images/new_images/IMG_2126.jpg');
     background-size: cover;
     background-position: center;
     filter: brightness(0.4) saturate(0.7);
