@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="shell" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#C89035"/>
+      <stop offset="55%" stop-color="#8B5A1A"/>
+      <stop offset="100%" stop-color="#5A3208"/>
+    </radialGradient>
+  </defs>
+  <!-- Walnut shell body -->
+  <ellipse cx="50" cy="53" rx="37" ry="34" fill="url(#shell)"/>
+  <!-- Upper equatorial seam groove (top arc) -->
+  <path d="M14 53 C28 44,42 46,50 48 C58 46,72 44,86 53"
+        stroke="#3A2008" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Lower equatorial seam groove (bottom arc) -->
+  <path d="M14 55 C28 64,42 61,50 59 C58 61,72 64,86 55"
+        stroke="#3A2008" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Vertical suture line -->
+  <path d="M50 19 C52 34,48 47,50 53 C52 59,48 72,50 84"
+        stroke="#3A2008" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Surface ridge texture - upper left -->
+  <path d="M23 42 C31 38,41 40,46 43"
+        stroke="#3A2008" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <!-- Surface ridge texture - upper right -->
+  <path d="M54 43 C59 40,69 38,77 42"
+        stroke="#3A2008" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <!-- Surface ridge texture - lower left -->
+  <path d="M20 65 C29 69,39 67,46 65"
+        stroke="#3A2008" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <!-- Surface ridge texture - lower right -->
+  <path d="M54 65 C61 67,71 69,80 65"
+        stroke="#3A2008" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <!-- Small stem/tip at top -->
+  <ellipse cx="50" cy="20" rx="5" ry="4" fill="#5A3208"/>
+</svg>
