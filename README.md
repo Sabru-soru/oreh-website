@@ -1,6 +1,6 @@
 # 🌰 Orehi Urbas – Spletna stran
 
-Profesionalna spletna stran kmetije **Orehi Urbas** iz Štajerske.
+Profesionalna spletna stran kmetije **Orehi Urbas** iz Dolenjske.
 
 ## 🚀 Deployment na GitHub Pages
 
