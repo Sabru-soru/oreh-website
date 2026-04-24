@@ -2,11 +2,6 @@
 
 Repozitorij vsebuje izvorno kodo spletne strani **Kmetije Urbas / Orehi Urbas** – ekološke kmetije iz Dolenjske, ki se ukvarja s pridelavo kakovostnih orehov.
 
-🌐 **Stran:** [Orehi Urbas](https://sabru-soru.github.io/oreh-website/)  
-📍 **Lokacija:** Šentvid pri Stični 174, 1296 Šentvid pri Stični, Slovenija  
-📞 **Telefon:** 031 733 211  
-📧 **E-pošta:** uros.urbas@gmail.com
-
 ## 📄 Strani
 
 | Datoteka | Vsebina |
