@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recepti z orehi – orehova potica, torta, solata, namaz in več. Preverjena receptura z orehi Kmetije Urbas.">
+    <title>Recepti – Orehi Urbas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌰</text></svg>">
+    <style>
+        .recipe-full { display: none; margin-top: 1.5rem; }
+        .recipe-full.open { display: block; }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGACIJA -->
+<nav class="navbar" role="navigation" aria-label="Glavna navigacija">
+    <div class="container">
+        <a href="index.html" class="nav-logo">
+            <span class="nav-logo-main">🌰 Orehi Urbas</span>
+            <span class="nav-logo-sub">Kmetija Urbas</span>
+        </a>
+        <button class="hamburger" aria-label="Odpri meni" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" role="list">
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="o-nas.html">O nas</a></li>
+            <li><a href="orehi.html">Sorte & Lastnosti</a></li>
+            <li><a href="pridelava.html">Pridelava</a></li>
+            <li><a href="recepti.html">Recepti</a></li>
+            <li><a href="kontakt.html" class="nav-cta">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="container">
+        <div class="page-hero-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Domov</a>
+                <span class="breadcrumb-sep">›</span>
+                <span>Recepti</span>
+            </nav>
+            <h1>Recepti z <em style="font-style:italic; color:var(--accent)">orehi</em></h1>
+            <p>Od tradicionalne pohovane do modernih gurmanskih jedi – preverjena receptura z orehi Kmetije Urbas.</p>
+        </div>
+    </div>
+</div>
+
+<!-- PREGLED RECEPTOV -->
+<section class="section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-label">Naša kuhinja</span>
+            <h2>5 receptov z orehi</h2>
+            <p>Kliknite na recept za celotna navodila, sestavine in koristne nasvete.</p>
+            <div class="section-divider"></div>
+        </div>
+
+        <!-- RECEPT 1: OREHOVA POTICA -->
+        <div class="recipe-card fade-in" style="margin-bottom:2rem; overflow:visible;">
+            <div style="display:grid; grid-template-columns:280px 1fr; gap:0; overflow:hidden; border-radius:12px 12px 0 0;">
+                <img src="https://picsum.photos/seed/potica-walnut/560/380"
+                     alt="Orehova potica" class="recipe-img"
+                     style="height:100%; min-height:200px; border-radius:0;" loading="lazy">
+                <div class="recipe-body">
+                    <div class="recipe-meta">
+                        <span>⏱️ 3 ure</span>
+                        <span>👥 12 porcij</span>
+                        <span>🌟 Tradicionalna</span>
+                    </div>
+                    <h2 class="recipe-title">Domača orehova potica</h2>
+                    <p class="recipe-desc">Slovensko narodno živilo, ki je nepredstavljivo brez kakovostnih orehov. S polnilom iz sveže mletih orehov Franquette bo vaša potica aromatična, vlažna in polna okusa.</p>
+                    <button class="btn btn-primary mt-3 recipe-toggle" data-target="recipe-potica" style="font-size:0.82rem; padding:0.6rem 1.3rem;">
+                        Celoten recept
+                    </button>
+                </div>
+            </div>
+            <div id="recipe-potica" class="recipe-full">
+                <div style="padding:2rem; background:var(--bg-medium); border-radius:0 0 12px 12px;">
+                    <div class="recipe-info-bar">
+                        <div class="recipe-info-item">
+                            <span class="recipe-info-label">Priprava</span>
+                            <span class="recipe-info-value">45 min</span>
+                        </div>
+                        <div class="recipe-info-item">
+                            <span class="recipe-info-label">Vzhajevanje</span>
+                            <span class="recipe-info-value">90 min</span>
+                        </div>
+                        <div class="recipe-info-item">
+                            <span class="recipe-info-label">Pečenje</span>
+                            <span class="recipe-info-value">50–60 min</span>
+                        </div>
+                        <div class="recipe-info-item">
+                            <span class="recipe-info-label">Porcije</span>
+                            <span class="recipe-info-value">12 rezin</span>
+                        </div>
+                        <div class="recipe-info-item">
+                            <span class="recipe-info-label">Temperatura</span>
+                            <span class="recipe-info-value">175°C</span>
+                        </div>
+                    </div>
+                    <div class="recipe-columns">
+                        <div>
+                            <h3 style="margin-bottom:1rem; font-size:1.1rem;">Sestavine</h3>
+                            <h4 style="color:var(--accent); font-size:0.85rem; margin-bottom:0.75rem; letter-spacing:1px; text-transform:uppercase;">Za testo</h4>
+                            <ul class="ingredients-list">
+                                <li>500 g mehke moke</li>
+                                <li>200 ml mlačnega mleka</li>
+                                <li>80 g masla</li>
+                                <li>3 rumenjaki</li>
+                                <li>60 g sladkorja</li>
+                                <li>25 g svežega kvasa</li>
+                                <li>ščepec soli</li>
+                                <li>1 žlica ruma</li>
+                            </ul>
+                            <h4 style="color:var(--accent); font-size:0.85rem; margin: 1.25rem 0 0.75rem; letter-spacing:1px; text-transform:uppercase;">Za nadeve</h4>
+                            <ul class="ingredients-list">
+                                <li>400 g mletih orehov (Franquette)</li>
+                                <li>200 ml mleka</li>
+                                <li>150 g sladkorja</li>
+                                <li>2 žlici medu</li>
+                                <li>50 g masla</li>
+                                <li>2 jajci</li>
+                                <li>1 vaniljev sladkor</li>
+                                <li>2 žlici smetane</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom:1rem; font-size:1.1rem;">Postopek</h3>
+                            <ol class="steps-list">
+                                <li>Razmešajte kvas v mlačnem mleku z žličko sladkorja. Počakajte 10 minut, da se aktivira in nastane pena.</li>
+                                <li>V skledo stresemo moko, dodamo sol, sladkor in naredimo jamo v sredini. Dodamo kvasno mešanico, jajca in rum.</li>
+                                <li>Gnetemo 10–12 minut, dokler ne dobimo gladkega, elastičnega testa. Postopoma dodajamo mehko maslo.</li>
+                                <li>Testo pokrijemo in pustimo vzhajati na toplem mestu 60 minut, dokler se ne podvoji.</li>
+                                <li>Med tem pripravimo nadev: zavrete mleko s sladkorjem in maslom. Dodamo mlete orehi, med in vaniljev sladkor. Mešamo 5 minut na zmernem ognju. Ohladimo.</li>
+                                <li>V ohlajene orehi vmešamo jajci in smetano. Nadev mora biti mazljiv, ne premokre.</li>
+                                <li>Vzhajano testo razvaljamo v pravokotnik debeline ~5 mm. Enakomerno namažemo z nadevom, pustimo 2 cm rob.</li>
+                                <li>Zvijemo v čvrst zavitek. Položimo v namaščen model za potico (ali okrogel model s sredico).</li>
+                                <li>Pustimo vzhajati še 30 minut. Premažemo z rumenjaki.</li>
+                                <li>Pečemo v predhodno ogretem pečici na 175°C, 50–60 minut. Ko je zlato-rjava in votla pri klopotanju, je gotova.</li>
+                            </ol>
+                            <div class="highlight-box" style="margin-top:1.5rem;">
+                                <p><strong style="color:var(--accent)">💡 Nasvet:</strong> Za naj-potico mleti orehi ne smejo biti prestari. Sveže mleti orehi Franquette imajo mehko, ne-grenko aromo. Pečena potica mora dan po pečenju počivati – okus se razvije čez noč.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECEPT 2: OREHOVA TORTA -->
+        <div class="recipe-card fade-in fade-in-delay-1" style="margin-bottom:2rem; overflow:visible;">
+            <div style="display:grid; grid-template-columns:280px 1fr; gap:0; overflow:hidden; border-radius:12px 12px 0 0;">
+                <img src="https://picsum.photos/seed/walnut-cake/560/380"
+                     alt="Orehova torta" class="recipe-img"
+                     style="height:100%; min-height:200px; border-radius:0;" loading="lazy">
+                <div class="recipe-body">
+                    <div class="recipe-meta">
+                        <span>⏱️ 1.5 ure</span>
+                        <span>👥 10 porcij</span>
+                        <span>🍰 Sladica</span>
+                    </div>
+                    <h2 class="recipe-title">Kremna orehova torta</h2>
+                    <p class="recipe-desc">Nežno biskvitno testo z orehi, prevlečeno z vaniljevo kremo in hrustljavim orehnim prelivom. Sladica za posebne priložnosti.</p>
+                    <button class="btn btn-primary mt-3 recipe-toggle" data-target="recipe-torta" style="font-size:0.82rem; padding:0.6rem 1.3rem;">
+                        Celoten recept
+                    </button>
+                </div>
+            </div>
+            <div id="recipe-torta" class="recipe-full">
+                <div style="padding:2rem; background:var(--bg-medium); border-radius:0 0 12px 12px;">
+                    <div class="recipe-info-bar">
+                        <div class="recipe-info-item"><span class="recipe-info-label">Priprava</span><span class="recipe-info-value">30 min</span></div>
+                        <div class="recipe-info-item"><span class="recipe-info-label">Pečenje</span><span class="recipe-info-value">35 min</span></div>
+                        <div class="recipe-info-item"><span class="recipe-info-label">Hlajenje</span><span class="recipe-info-value">2 uri</span></div>
+                        <div class="recipe-info-item"><span class="recipe-info-label">Porcije</span><span class="recipe-info-value">10 rezin</span></div>
+                    </div>
+                    <div class="recipe-columns">
+                        <div>
+                            <h3 style="margin-bottom:1rem; font-size:1.1rem;">Sestavine</h3>
+                            <h4 style="color:var(--accent); font-size:0.85rem; margin-bottom:0.75rem; letter-spacing:1px; text-transform:uppercase;">Biskvit</h4>
+                            <ul class="ingredients-list">
+                                <li>6 jajc (ločeno)</li>
+                                <li>150 g mletih orehov (Chandler)</li>
+                                <li>100 g sladkorja</li>
+                                <li>50 g drobtine</li>
+                                <li>1 prašek za pecivo</li>
+                            </ul>
+                            <h4 style="color:var(--accent); font-size:0.85rem; margin:1.25rem 0 0.75rem; letter-spacing:1px; text-transform:uppercase;">Krema</h4>
+                            <ul class="ingredients-list">
+                                <li>500 ml sladke smetane</li>
+                                <li>250 g mascarpone</li>
+                                <li>80 g sladkorja</li>
+                                <li>1 vaniljev strok</li>
+                                <li>100 g mletih orehov</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom:1rem; font-size:1.1rem;">Postopek</h3>
+                            <ol class="steps-list">
+                                <li>Ločite beljake od rumenjakov. Rumenjake stepajte s sladkorjem do pene.</li>
+                                <li>Vmešajte mlete orehi, drobtine in prašek za pecivo.</li>
+                                <li>Beljake trdno stepajte in jih nežno vmešajte v testo v treh obrokih.</li>
+                                <li>Pečite v 24 cm kalupu pri 180°C 30–35 minut. Ohladite in prerežite na 2–3 plasti.</li>
+                                <li>Za kremo stepite hladno smetano do trdne pene. Zmešajte mascarpone z sladkorjem in vaniljo, nato nežno pov mešajte s smetano.</li>
+                                <li>Vmešajte 100 g mletih orehov v kremo za nadev.</li>
+                                <li>Sestavite torto: biskvit, krema, biskvit, krema. Preostalo kremo porazdelite čez celotno torto.</li>
+                                <li>Okrasite s polovicami orehov Chandler in zlato polivko po okusu. Hladite 2 uri pred serviranjem.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECEPT 3: OREHOVE PLOŠČICE -->
+        <div class="recipe-card fade-in" style="margin-bottom:2rem; overflow:visible;">
+            <div style="display:grid; grid-template-columns:280px 1fr; gap:0; overflow:hidden; border-radius:12px 12px 0 0;">
+                <img src="https://picsum.photos/seed/walnut-pralines/560/380"
+                     alt="Orehove ploščice" class="recipe-img"
+                     style="height:100%; min-height:200px; border-radius:0;" loading="lazy">
+                <div class="recipe-body">
+                    <div class="recipe-meta">
+                        <span>⏱️ 30 min</span>
+                        <span>👥 20 kosov</span>
+                        <span>🍫 Prigrizek</span>
+                    </div>
+                    <h2 class="recipe-title">Karamelne orehove ploščice</h2>
+                    <p class="recipe-desc">Hrustljave orehove ploščice s karamelno osnovo in premazom temne čokolade. Neprekosljiva kombinacija za sladkosneže.</p>
+                    <button class="btn btn-primary mt-3 recipe-toggle" data-target="recipe-ploscice" style="font-size:0.82rem; padding:0.6rem 1.3rem;">
+                        Celoten recept
+                    </button>
+                </div>
+            </div>
+            <div id="recipe-ploscice" class="recipe-full">
+                <div style="padding:2rem; background:var(--bg-medium); border-radius:0 0 12px 12px;">
+                    <div class="recipe-info-bar">
+                        <div class="recipe-info-item"><span class="recipe-info-label">Priprava</span><span class="recipe-info-value">20 min</span></div>
+                        <div class="recipe-info-item"><span class="recipe-info-label">Kuhanje</span><span class="recipe-info-value">15 min</span></div>
+                        <div class="recipe-info-item"><span class="recipe-info-label">Hlajenje</span><span class="recipe-info-value">1 ura</span></div>
+                        <div class="recipe-info-item"><span class="recipe-info-label">Kosov</span><span class="recipe-info-value">~20</span></div>
+                    </div>
+                    <div class="recipe-columns">
+                        <div>
+                            <ul class="ingredients-list">
+                                <li>300 g orehov (polovice)</li>
+                                <li>200 g sladkorja</li>
+                                <li>100 ml sladke smetane</li>
+                                <li>80 g masla</li>
+                                <li>1 žlica medu</li>
+                                <li>ščepec soli</li>
+                                <li>200 g temne čokolade (70%)</li>
+                                <li>30 g masla (za čokolado)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ol class="steps-list">
+                                <li>Orehi v pečici na 160°C pražite 8 minut, da postanejo aromatični. Ohladite.</li>
+                                <li>V posodi stopite sladkor na zmernem ognju brez mešanja, dokler ne nastane zlata karamela.</li>
+                                <li>Dodajte maslo in mešajte. Dodajte toplo smetano (previdno – prska!) in med. Kuhajte 2 minuti.</li>
+                                <li>Vmešajte orehi in sol. Maso razporedite na papir za pečenje v plast debeline 1 cm.</li>
+                                <li>Ohladite 30 minut. Stopite čokolado z maslom in prelijte orehi plast.</li>
+                                <li>Hladite še 30 minut. Razrežite na ploščice in shranjujte v hladnem, suhem mestu.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECEPT 4: SOLATA -->
+        <div class="recipe-card fade-in fade-in-delay-1" style="margin-bottom:2rem; overflow:visible;">
+            <div style="display:grid; grid-template-columns:280px 1fr; gap:0; overflow:hidden; border-radius:12px 12px 0 0;">
+                <img src="https://picsum.photos/seed/walnut-salad/560/380"
+                     alt="Orehova solata" class="recipe-img"
+                     style="height:100%; min-height:200px; border-radius:0;" loading="lazy">
+                <div class="recipe-body">
+                    <div class="recipe-meta">
+                        <span>⏱️ 15 min</span>
+                        <span>👥 4 porcije</span>
+                        <span>🥗 Lahka jed</span>
+                    </div>
+                    <h2 class="recipe-title">Solata s hruško, orehi in gorgonzolo</h2>
+                    <p class="recipe-desc">Elegantna jesen solata s sladko hruško, karameliziranimi orehi, gorgonzolo in prelivo iz orehového olja. Idealna za posebne priložnosti.</p>
+                    <button class="btn btn-primary mt-3 recipe-toggle" data-target="recipe-solata" style="font-size:0.82rem; padding:0.6rem 1.3rem;">
+                        Celoten recept
+                    </button>
+                </div>
+            </div>
+            <div id="recipe-solata" class="recipe-full">
+                <div style="padding:2rem; background:var(--bg-medium); border-radius:0 0 12px 12px;">
+                    <div class="recipe-info-bar">
+                        <div class="recipe-info-item"><span class="recipe-info-label">Priprava</span><span class="recipe-info-value">10 min</span></div>
+                        <div class="recipe-info-item"><span class="recipe-info-label">Kuhanje</span><span class="recipe-info-value">5 min</span></div>
+                        <div class="recipe-info-item"><span class="recipe-info-label">Porcije</span><span class="recipe-info-value">4</span></div>
+                        <div class="recipe-info-item"><span class="recipe-info-label">Nivo</span><span class="recipe-info-value">Enostavno</span></div>
+                    </div>
+                    <div class="recipe-columns">
+                        <div>
+                            <h3 style="margin-bottom:1rem; font-size:1.1rem;">Sestavine</h3>
+                            <ul class="ingredients-list">
+                                <li>150 g mešane solate (rukola, radiči)</li>
+                                <li>2 zreli hruški (Williams ali Conference)</li>
+                                <li>100 g gorgonzole</li>
+                                <li>80 g orehov (karameliziranih)</li>
+                                <li>50 g brusnič ali granatnih zrn</li>
+                                <li>3 žlice orehového olja</li>
+                                <li>1.5 žlice jabolčnega kisa</li>
+                                <li>1 žlica medu</li>
+                                <li>sol in poper</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom:1rem; font-size:1.1rem;">Postopek</h3>
+                            <ol class="steps-list">
+                                <li>Orehi karameliziramo: v ponvi stopimo žlico sladkorja, dodamo orehi in mešamo 2–3 minute, dokler niso prevlečeni. Ohladimo na papirju.</li>
+                                <li>Hruški narežemo na tanke rezine in jih previdno popražimo na grill ponvi 1 minuto na vsako stran, da dobijo lepe črte.</li>
+                                <li>Solata razporedimo na serviernih krožnikih. Dodamo hruševe rezine, koščke gorgonzole, karameliziraNe orehi in brusnice.</li>
+                                <li>Pripravimo preliv: zmešamo orehovo olje, jabolčni kis, med, sol in poper. Dobro pretresemo.</li>
+                                <li>Solato prelijemo tik pred serviranjem. Dekoriramo z listi rukole in dodatnimi orehi.</li>
+                            </ol>
+                            <div class="highlight-box" style="margin-top:1rem;">
+                                <p><strong style="color:var(--accent)">💡 Nasvet:</strong> Hladno stiskano orehovo olje Kmetije Urbas ima aromo, ki bo vzdigila vsako solato na novo raven. Ne segrevajte ga!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECEPT 5: OREHOV NAMAZ -->
+        <div class="recipe-card fade-in" style="margin-bottom:2rem; overflow:visible;">
+            <div style="display:grid; grid-template-columns:280px 1fr; gap:0; overflow:hidden; border-radius:12px 12px 0 0;">
+                <img src="https://picsum.photos/seed/walnut-spread/560/380"
+                     alt="Orehov namaz" class="recipe-img"
+                     style="height:100%; min-height:200px; border-radius:0;" loading="lazy">
+                <div class="recipe-body">
+                    <div class="recipe-meta">
+                        <span>⏱️ 10 min</span>
+                        <span>👥 1 kozarec</span>
+                        <span>🍞 Namaz</span>
+                    </div>
+                    <h2 class="recipe-title">Domač orehov namaz</h2>
+                    <p class="recipe-desc">Kremast orehov namaz z medom in cimetom za vsakdanji zajtrk. Brez dodanega sladkorja, brez konzervansov – samo orehi, med in ljubezen.</p>
+                    <button class="btn btn-primary mt-3 recipe-toggle" data-target="recipe-namaz" style="font-size:0.82rem; padding:0.6rem 1.3rem;">
+                        Celoten recept
+                    </button>
+                </div>
+            </div>
+            <div id="recipe-namaz" class="recipe-full">
+                <div style="padding:2rem; background:var(--bg-medium); border-radius:0 0 12px 12px;">
+                    <div class="recipe-info-bar">
+                        <div class="recipe-info-item"><span class="recipe-info-label">Priprava</span><span class="recipe-info-value">5 min</span></div>
+                        <div class="recipe-info-item"><span class="recipe-info-label">Praženje</span><span class="recipe-info-value">8 min</span></div>
+                        <div class="recipe-info-item"><span class="recipe-info-label">Skupaj</span><span class="recipe-info-value">15 min</span></div>
+                        <div class="recipe-info-item"><span class="recipe-info-label">Rok</span><span class="recipe-info-value">2 tedna</span></div>
+                    </div>
+                    <div class="recipe-columns">
+                        <div>
+                            <ul class="ingredients-list">
+                                <li>250 g orehov (Lara ali Chandler)</li>
+                                <li>2–3 žlice medu (po okusu)</li>
+                                <li>2 žlici orehového olja</li>
+                                <li>½ žličke cimeta</li>
+                                <li>ščepec soli</li>
+                                <li>1 žlička vaniljevega ekstrakta</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ol class="steps-list">
+                                <li>Orehi pražite v pečici na 160°C 8 minut ali na suhi ponvi 5 minut. Pustite, da se ohladijo – to je ključ za kremast namaz.</li>
+                                <li>Ohlajene orehi dajte v blender ali food procesor. Meljite 1 minuto – dobite grob prah.</li>
+                                <li>Dodajte orehovo olje, sol in nadaljujte z mletjem 2–3 minute. Orehi bodo spustili naravno olje in postali pasta.</li>
+                                <li>Dodajte med, cimet in vaniljev ekstrakt. Meljite še 1–2 minuti do željene kremaste konsistance.</li>
+                                <li>Preverite okus in prilagodite med/sol. Shranite v čist stekleni kozarec v hladilniku.</li>
+                            </ol>
+                            <div class="highlight-box" style="margin-top:1rem;">
+                                <p><strong style="color:var(--accent)">💡 Nasvet:</strong> Za tekoč namaz dodajte več orehového olja. Za hrustljavejšo teksturo grobo sesekljajte 50 g orehov in vmešajte na koncu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- NASVETI ZA SHRANJEVANJE -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-label">Nasveti</span>
+            <h2>Nasveti za shranjevanje orehov</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="grid-3">
+            <div class="feature-box fade-in">
+                <div class="feature-icon">❄️</div>
+                <h3>Neolupljeni orehi</h3>
+                <p>Na hladnem (0–5°C), suhem in temnem mestu. V kleti ali v hladilniku. Zdržijo do 12 mesecev. Izogibajte se direktni sončni svetlobi.</p>
+            </div>
+            <div class="feature-box fade-in fade-in-delay-1">
+                <div class="feature-icon">🫙</div>
+                <h3>Jedra orehov</h3>
+                <p>V zaprtem steklenem kozarcu v hladilniku. Zdržijo 3–6 mesecev. Za daljše shranjevanje zamrznite – v zamrzovalniku zdržijo do 12 mesecev brez izgube okusa.</p>
+            </div>
+            <div class="feature-box fade-in fade-in-delay-2">
+                <div class="feature-icon">🫗</div>
+                <h3>Orehovo olje</h3>
+                <p>V temni stekleni steklenici, zaprta, v hladilniku. Rok trajanja 6–8 mesecev po odprtju. Olje, ki diši po pranem platnu ali je grenkoJe, je oksidirano – zavrzite ga.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content fade-in">
+            <span class="section-label">Kupite naše orehi</span>
+            <h2>Začnite kuhati z <em style="font-style:italic; color:var(--accent)">pravimi orehi</em></h2>
+            <p>Sveži orehi, premium jedra in hladno stiskano orehovo olje – direktno od kmetije Urbas.</p>
+            <div class="cta-buttons">
+                <a href="kontakt.html" class="btn btn-primary">📬 Naročilo & povpraševanje</a>
+                <a href="orehi.html" class="btn btn-outline">🌰 Naše sorte</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="nav-logo-main">🌰 Orehi Urbas</span>
+                <span class="nav-logo-sub">Kmetija Urbas · Štajerska</span>
+                <p>Kakovostni orehi iz srca Štajerske. Naravno pridelani, ročno izbrani, polni okusa.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigacija</h4>
+                <ul>
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="o-nas.html">O nas</a></li>
+                    <li><a href="orehi.html">Sorte & Lastnosti</a></li>
+                    <li><a href="pridelava.html">Pridelava</a></li>
+                    <li><a href="recepti.html">Recepti</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Recepti</h4>
+                <ul>
+                    <li><a href="recepti.html">Orehova potica</a></li>
+                    <li><a href="recepti.html">Orehova torta</a></li>
+                    <li><a href="recepti.html">Karamelne ploščice</a></li>
+                    <li><a href="recepti.html">Solata z orehi</a></li>
+                    <li><a href="recepti.html">Orehov namaz</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li><a href="kontakt.html">📍 Štajerska, Slovenija</a></li>
+                    <li><a href="tel:+38640123456">📞 +386 40 123 456</a></li>
+                    <li><a href="mailto:info@orehiurbas.si">✉️ info@orehiurbas.si</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Kmetija Urbas · Vse pravice pridržane</span>
+            <span>Narejeno z ❤️ v Sloveniji</span>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
